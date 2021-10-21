@@ -1,4 +1,88 @@
 body{
     background-color: black;
-    color:lightgray
+    color:lightgray;
+    font-family: 'Barlow', sans-serif;
+}
+.wide{
+    padding-top:50px ;
+    width: 100%
+}
+.font{
+    font-family: 'Barlow', sans-serif;
+}
+.navLogoImg {
+    width: 500px;
+    
+    }
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Barlow', sans-serif;
+    align-items: center;
+    height: 50px;
+
+    
+    padding: 0px;
+    /* margin-top: 0px; */
+}
+.nav-links {
+    display: flex;
+    padding-right: 10px;
+} 
+nav {
+    width: 100%;
+    z-index: 4;
+}
+
+.nav-links {
+    list-style: none;
+    }
+
+.nav-item a {
+    display: inline-blockflex;
+    margin-top: 2px;
+    padding: 1px 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: lightgray;
+    }
+    .nav-item:hover a {
+        color:lightgray;
+        border-bottom: 0.5px solid lightgray;
+        }
+    
+    .nav-item:active a {
+        color: lightgray;
+        border-bottom: 0.5px solid lightgray;
+        }
+.nav-item-menu a {
+    display: inline-blockflex;
+    margin-top: 2px;
+    padding: 1px 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: lightgray;
+    }
+    .nav-item-menu:hover a {
+        color:lightgray;
+        
+        }
+    
+    .nav-item-menu:active a {
+        color: lightgray;
+        border-bottom: 0.5px solid lightgray;
+        }
+.dropdown-item:hover{
+    background-color: rgb(34, 34, 34);
+
+}
+.album-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clear{
+    clear: both;
 }

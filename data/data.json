@@ -1,6 +1,6 @@
 {"albums":[{
     "name": "Unleash the Archers",
-    "shortname": "UtA",
+    "shortname": "behold",
     "albumname" : "Behold the Devistation",
     "summary" : "Released August 1, 2009",
     "artwork": "Behold.jpeg",
@@ -14,10 +14,10 @@
         "7. Tied To A Stag 05:32",
         "8. Four In Hand 06:19"],
     "albumAM": "",
-    "albumSM": ""
+    "albumSM": "https://open.spotify.com/album/6xloRtF3xYlXr3uhNCKH7u?si=8Z_mgqiOT8KnDezdWW0uSw"
 },{
     "name": "Unleash the Archers",
-    "shortname": "UtA",
+    "shortname": "Demons",
     "albumname" : "Demons of the AstroWaste",
     "summary" : "Released May 19, 2011",
     "artwork": "Demons.jpeg",
@@ -35,10 +35,10 @@
         "11. Astral Annihilation 04:23", 
         "12. Ripping Through Time 06:18"],
     "albumAM": "",
-    "albumSM": ""
+    "albumSM": "https://open.spotify.com/album/2DkBoDwMUIBnpPTwRQnCmK?si=LWPCsfY7TY-TuFYPrGROyw"
 },{
     "name": "Unleash the Archers",
-    "shortname": "UtA",
+    "shortname": "Defy",
     "albumname" : "Defy the Skies",
     "summary" : "Released July 26, 2012",
     "artwork": "DefytheSkies.jpeg",
@@ -48,10 +48,10 @@
         "3. Soulstorm 02:50",
         "4. Arise 04:56" ],
     "albumAM": "",
-    "albumSM": ""
+    "albumSM": "https://open.spotify.com/album/1G3AeSD5QLRggJsSLEXb2k?si=Fznpsm9WQZGTYtnLX9q0Ww"
 },{
     "name": "Unleash the Archers",
-    "shortname": "UtA",
+    "shortname": "Time",
     "albumname" : "Time Stands Still",
     "summary" : "Released June 26, 2015",
     "artwork": "TimeStandsStill.jpeg",
@@ -68,10 +68,10 @@
         "10. Time Stands Still 06:00",
         "11. Tonight We Ride (Video Edit) 05:23"],
     "albumAM": "",
-    "albumSM": ""
+    "albumSM": "https://open.spotify.com/album/5FxttXUCQKu1qIVsy9emXu?si=-f-wZBkKR-6-ahuiJP3V1g"
 },{
     "name": "Unleash the Archers",
-    "shortname": "UtA",
+    "shortname": "Apex",
     "albumname" : "Apex",
     "summary" : "Released June 2, 2017",
     "artwork": "Apex.jpeg",
@@ -87,13 +87,13 @@
         "9. Call Me Immortal 05:46",
         "10. Apex 08:20" ],
     "albumAM": "",
-    "albumSM": ""
+    "albumSM": "https://open.spotify.com/album/5JybNeeVC1mXYcJtiLGOhq?si=mpf6xN4eQ5SREB9JWEoDTA"
 },{
     "name": "Unleash the Archers",
-    "shortname": "UtA",
+    "shortname": "Expl",
     "albumname" : "Explorers",
     "summary" : "Released October 11, 2019. The first single from Explorers is a cover of a very well known Canadian folk song called Northwest Passage, written by a much-loved folk singer out of eastern Canada by the name of Stan Rogers. The second single is a cover of a song by a Canadian hair metal band from the 80's called Teaze.  They are not super well known, but that's why we gravitated towards them.  The song 'Heartless World' has a really interesting arrangement and can't seem to decide if it's a ballad or a rock opera.  Unlike Northwest Passage, where we played around with it quite a bit, we left 'Heartless World' almost completely as is, and only changed a few small things like solos and vocal melodies.  We thought it would be a great companion piece to 'Northwest Passage' and really round out the moody 'Explorers' vibe. ",
-    "artwork": "Explorers.jped",
+    "artwork": "Explorers.jpeg",
     "tracklist": [
         " 1. Northwest Passage 4:45", 
         " 2. Heartless World 5:48"],
@@ -101,7 +101,7 @@
     "albumSM": ""
 },{
     "name": "Unleash the Archers",
-    "shortname": "UtA",
+    "shortname": "Abyss",
     "albumname" : "Abyss",
     "summary" : " Released August 21, 2020. Less than a year after the release of their covers EP Explorers, Canadian melodic power metal quartet UNLEASH THE ARCHERS have sharpened their arrows and hit the bullseye once again with their fifth full-length album, Abyss. Featuring 10 new tracks, this adventure is a concept album and sequel to 2017’s Apex, and was once again recorded with legendary producer Jacob Hansen of Hansen Studios in Denmark. Abyss succeeds in showcasing the mind-blowing technical craftmanship of the young four-piece with the perfect mix of highly complex, catchy bangers and moody, synth-infused power ballads. Pairing traditional heavy sounds in the vein of Iron Maiden and Judas Priest with fast-paced power metal, the album is once again accented by frontwoman Brittney Slayes' raw four octave mezzo-soprano, shining both in powerful anthems like the outstanding title track “Abyss” as well as the fragile intro of the epic “The Wind That Shapes The Land”, and contrasted with guttural screams on the soaring “Return To Me” or the transcendent album closer 'Afterlife' The quartet from Vancouver has forged their own niche in the world of metal and cemented it with memorable live shows all over the world, and now, a lucky 13 years after their inception, they've delivered their strongest album to date.",
     "artwork": "Abyss.jpeg",
@@ -118,5 +118,5 @@
         "10. Afterlife 07:30"],
 
     "albumAM": "",
-    "albumSM": ""
+    "albumSM": "https://open.spotify.com/album/5AZyScekGF0otc4JAYGiDG?si=HlVM2KiQQ9W9X5FhjqqqLg"
 }]}
