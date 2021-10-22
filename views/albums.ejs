@@ -10,26 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Unleash the Archers</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title><%= pageTitle %> </title>
 </head>
 <body>
     <div class="container-fluid p-0">
         <nav class="navbar justify-content-center">
             <div>
                 <a href="/" class="justify-content-center d-none d-lg-block">
-                    <img src="images/UTA+Logo+Smoke.png"  alt="UTA logo" class="navLogoImg">
+                    <img src="/images/UTA+Logo+Smoke.png"  alt="UTA logo" class="navLogoImg">
                 </a>
             
                 <li class="nav-item dropdown  d-lg-none d-xl-none nav-links">
                     <a class="nav-item-menu dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="images/UTA+Logo+Smoke.png" alt="UTA logo" class="navLogoImg">
+                        <img src="/images/UTA+Logo+Smoke.png" alt="UTA logo" class="navLogoImg">
                     </a>
                     <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
                         <li class="nav-item dropdown-item"><a href="/" aria-current="Home">HOME</a></li>
                         <li class="nav-item dropdown-item"><a href="/albums" id="searchHref">ALBUMS</a></li>
-                        <li class="nav-item dropdown-item"><a href="#">ABOUT</a></li>
-                        <li class="nav-item dropdown-item"><a href="#">CONTACT US</a></li>
+                        <li class="nav-item dropdown-item"><a href="/about">ABOUT</a></li>
+                        <li class="nav-item dropdown-item"><a href="/contact">CONTACT US</a></li>
                         <li class="nav-item dropdown-item"><a href="#">CHAT ROOM</a></li>
                     </ul>
                 </li>
@@ -39,44 +39,48 @@
             <ul class="nav-links">
                 <li class="nav-item"><a href="/" aria-current="Home">HOME</a></li>
                 <li class="nav-item"><a href="/albums" id="searchHref">ALBUMS</a></li>
-                <li class="nav-item"><a href="#">ABOUT</a></li>
-                <li class="nav-item"><a href="#">CONTACT US</a></li>
+                <li class="nav-item"><a href="/about">ABOUT</a></li>
+                <li class="nav-item"><a href="/contact">CONTACT US</a></li>
                 <li class="nav-item"><a href="#">CHAT ROOM</a></li>
             </ul>
             </div>
         <div class="clear"></div>
         </nav>
-    ≈
+        <div class="container-fluid p-0">
         <!-- Albums -->
         <div class="col-sm-12">
-            <article class="speakerslist ">
+            
                 <div class="container">
-                    <div class="row album-card">
+                    <div class="row">
                         <% albums.forEach(albumObj => { %>
-
-                        
-                        <div class="col-sm-6">
-                                <a href="/speakers/<%= albumObj.shortname %>">
+                        <div class="col-lg-6 album-card">
+                                <a href="/albums/<%= albumObj.shortname %>">
                                     <img class="" src="/images/<%= albumObj.artwork%>" width="600px" height="600px" alt="Photo of <%= albumObj.albumname %>"></a>
-                                    </div>
-
-                                    <div class="col-sm-6 ">
-                                    <h3 class=""><%= albumObj.albumname %> </h3>
-                                            <%= albumObj.summary %>
+                                </div>
                             
-                        </div>
-                        
-                        <% }) %>
-                        
+                            <% if (showDetails == true) { %>
+                            <div class="col-lg-6 album-card nav-item flex-column">
+                                <h3><%= albumObj.albumname %></h3>
+                                <ul class="d-block">
+                                    <% for( let index = 0; index < albumObj.tracklist.length; index++ ) { %>
+                                        <li class="nav-links"> <%= albumObj.tracklist[index] %> </li>
+                                        <% } %>
+                                </ul> 
 
-                    </div><!-- row -->
+                                <a href="<%= albumObj.albumSM %>" class="font"> Listen on <i class="fab fa-spotify"></i></a>
+                                
+                            </div>
+                            
+                            <% } %>
+                        <% }) %>
+                    </div>
                 </div><!-- container -->
-            </article>
+            
         </div><!-- primary -->
     
     
 
-    <footer class="container-fluid  mb-3 pb-2 row m-0 gx-0 d-flex align-items-bottom justify-content-center">
+    <footer class="container-fluid footspace  mb-3 pb-2 row m-0 gx-0 d-flex align-items-bottom justify-content-center">
         <div class="row wide pb-2 pb-md-0 col-md-4 text-center">
             <div class="col-12">© Andrew Hatch 2021</div>
             <div class="col-12 nav-item"><a href="https://github.com/AMHatch/AlbumProject" class="" target="_blank"> Github <i class="fab fa-github-square"></i></a></div>

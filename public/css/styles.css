@@ -4,7 +4,6 @@ body{
     font-family: 'Barlow', sans-serif;
 }
 .wide{
-    padding-top:50px ;
     width: 100%
 }
 .font{
@@ -21,7 +20,7 @@ body{
     justify-content: space-between;
     font-family: 'Barlow', sans-serif;
     align-items: center;
-    height: 50px;
+    
 
     
     padding: 0px;
@@ -82,7 +81,172 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 60px;
+    
+}
+.pic-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .clear{
     clear: both;
 }
+.footspace{
+    padding-top: 40px;
+}
+/* z-index */
+.z10{
+    z-index: 10;
+}
+.z15{
+    z-index: 15;
+}
+.z20{
+    z-index: 20;
+}
+.z25{
+    z-index: 25;
+}
+
+/* opacity */
+.opacity{
+    opacity: .7;
+
+}
+.size{
+    height: 100%;
+    width: 100%;
+}
+.image{
+    width: 2000px;
+    height:900px;
+    /* width: 100vw;
+    height:100vh; */
+
+    
+    justify-content: top ;
+    align-items: center;
+    background-image:url("/images/Britt.png");
+    display: flex;
+    background-size: cover;
+}
+
+.pad{
+    padding-top: 10px;
+}
+.font20{
+    font-size: 18px;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+width: 360px;
+padding: 8% 0 0;
+margin: auto;
+}
+.form {
+position: relative;
+z-index: 1;
+background: black;
+max-width: 960px;
+margin: 0 auto 15px;
+padding: 5px;
+text-align: center;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+font-family: 'Barlow', sans-serif;
+outline: 0;
+background: #2e2d2d;
+color: lightgray;
+width: 100%;
+border: 0;
+margin: 0 0 15px;
+padding: 15px;
+box-sizing: border-box;
+font-size: 14px;
+}
+.form button {
+font-family: 'Barlow', sans-serif;
+text-transform: uppercase;
+outline: 0;
+background:#2e2d2d;
+width: 100%;
+border: 0;
+padding: 15px;
+color: lightgray;
+font-size: 14px;
+-webkit-transition: all 0.3 ease;
+transition: all 0.3 ease;
+cursor: pointer;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+background: black;
+}
+.form .message {
+margin: 15px 0 0;
+color: #6d3636;
+font-size: 12px;
+}
+.form .message a {
+color: black;
+text-decoration: none;
+}
+.form .register-form {
+display: none;
+}
+.container {
+position: relative;
+z-index: 1;
+margin: 0 auto;
+}
+.container:before,
+.container:after {
+content: "";
+display: block;
+clear: both;
+}
+.container .info {
+margin: 5px auto;
+text-align: center;
+}
+.container .info h1 {
+margin: 0 0 15px;
+padding: 0;
+font-size: 36px;
+font-weight: 300;
+color: #1a1a1a;
+}
+.container .info span {
+color: #4d4d4d;
+font-size: 12px;
+}
+.container .info span a {
+color: #000000;
+text-decoration: none;
+}
+.container .info span .fa {
+color: #ef3b3a;
+}
+.textarea{
+    font-family: 'Barlow', sans-serif;
+    outline: 0;
+    background: #2e2d2d;
+    color: lightgray;
+    width: 100%;
+    height: 150px;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+::placeholder{ 
+    color: lightgray;
+    opacity: 1; /* Firefox */
+}
+

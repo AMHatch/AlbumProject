@@ -10,10 +10,12 @@ router.get('/albums', (req,res) => {
     pageAlbums.forEach(albumObj =>{
         albumCovers = albumCovers.concat(albumObj.artwork)
     })
+    console.log(pageAlbums);
     res.render('albums',{
         artwork: albumCovers,
         albums: pageAlbums,
-        pageTitle: "Albums | Unleash the Archers"
+        pageTitle: "Albums | Unleash the Archers",
+        showDetails: false
 
         
     })
@@ -21,7 +23,7 @@ router.get('/albums', (req,res) => {
 })
 router.get('/albums/:albumid',(req,res) => {
     //display one album
-    let album = req.params.speakerid
+    let album = req.params.albumid
     let photos = []
     let albums = []
 
@@ -31,11 +33,12 @@ router.get('/albums/:albumid',(req,res) => {
             albums.push(albumObj)
         }
     })
-    
+
     res.render('albums',{
-        artwork: albumCovers,
-        albums: pageAlbums,
-        pageTitle: `${albums[0].name} | Unleash the Archers`
+        artwork: photos,
+        albums: albums,
+        pageTitle: `${albums[0].name} | Unleash the Archers`,
+        showDetails: true
 
     })
 })
