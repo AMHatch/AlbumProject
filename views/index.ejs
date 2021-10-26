@@ -14,39 +14,7 @@
     <title>Unleash the Archers</title>
 </head>
 <body>
-    <div class="container-fluid p-0">
-        <nav class="navbar justify-content-center">
-            <div>
-            <a href="/" class="justify-content-center d-none d-lg-block">
-                <img src="images/UTA+Logo+Smoke.png"  alt="UTA logo" class="navLogoImg">
-            </a>
-            
-                <li class="nav-item dropdown  d-lg-none d-xl-none nav-links">
-                    <a class="nav-item-menu dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="images/UTA+Logo+Smoke.png" alt="UTA logo" class="navLogoImg">
-                    </a>
-                    <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
-                        <li class="nav-item dropdown-item"><a href="#" aria-current="Home">HOME</a></li>
-                        <li class="nav-item dropdown-item"><a href="/albums" id="searchHref">ALBUMS</a></li>
-                        <li class="nav-item dropdown-item"><a href="/about">ABOUT</a></li>
-                        <li class="nav-item dropdown-item"><a href="/contact">CONTACT US</a></li>
-                        <li class="nav-item dropdown-item"><a href="#">CHAT ROOM</a></li>
-                    </ul>
-                </li>
-            
-        </div>
-            <div class="d-flex d-none d-lg-block ">
-            <ul class="nav-links">
-                <li class="nav-item"><a href="#" aria-current="Home">HOME</a></li>
-                <li class="nav-item"><a href="/albums" id="searchHref">ALBUMS</a></li>
-                <li class="nav-item"><a href="/about">ABOUT</a></li>
-                <li class="nav-item"><a href="/contact">CONTACT US</a></li>
-                <li class="nav-item"><a href="#">CHAT ROOM</a></li>
-            </ul>
-        </div>
-        
-        </nav>
-    </div>
+    <%- include ('partials/navbar.ejs') %>
         <!-- header image -->
         <div class="container-fluid px-0">
         <div class=" d-flex wide">

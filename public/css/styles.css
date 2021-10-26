@@ -80,7 +80,9 @@ nav {
 .album-card{
     display: flex;
     align-items: center;
+
     justify-content: center;
+    
     margin-top: 60px;
     
 }
@@ -185,11 +187,11 @@ cursor: pointer;
 .form button:hover,
 .form button:active,
 .form button:focus {
-background: black;
+background: #000000;
 }
 .form .message {
 margin: 15px 0 0;
-color: #6d3636;
+color: #000000;
 font-size: 12px;
 }
 .form .message a {
@@ -248,5 +250,56 @@ color: #ef3b3a;
 ::placeholder{ 
     color: lightgray;
     opacity: 1; /* Firefox */
+}
+.chat-display {
+min-height: 150px;
+max-height: 40vh;
+overflow: scroll;
+font-size: 1.2em;
+}
+
+.chat-display p {
+font-size: .9em;
+padding: 0 10px;
+}
+
+.feedback, .feedback-form-title {
+font-size: 2rem;
+}
+
+.feedback-form {
+margin-top: 20px;
+font-family: "Roboto", sans-serif;
+font-size: 1.5rem;
+}
+
+
+.feedback-title {
+font-size: 1.2em;
+}
+
+.feedback-form-title {
+font-size: 2em;
+}
+
+.feedback-name {
+font-size: .6em;
+font-weight: 100;
+}
+
+.feedback-message {
+font-weight: 100;
+font-size: .9em;
+line-height: 120%;
+margin-top: 5px;
+}
+
+.feedback-item {
+border-bottom: 1px solid gray;
+padding: 8px 0;
+}
+
+.feedback-item:last-of-type {
+border-bottom: none;
 }
 

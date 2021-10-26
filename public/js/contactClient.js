@@ -6,9 +6,9 @@ form.addEventListener('submit', async (e) => {
     e.preventDefault()
 
 let newMessage = {
-    name: document.querySelector('#name').value,
-    title: document.querySelector('#title').value,
-    message: document.querySelector('#message').value
+    name: document.querySelector('#feedback-form-name').value,
+    title: document.querySelector('#feedback-form-title').value,
+    message: document.querySelector('#feedback-form-message').value
 }
 //fetch to /api
 let results = await fetch('/api',{
@@ -28,7 +28,7 @@ updateFeedback(messages)
 //grab api data and display messages when page loads
 
 const displayMessages = async () => {
-    let result = await fetch('/api',)
+    let result = await fetch('/api')
 
     let messages = await result.json()
 
@@ -43,7 +43,7 @@ const updateFeedback = (messagesArray) => {
 
         htmlBlock += '     <div class="feedback-item item-list media-list">';
         htmlBlock += '       <div class="feedback-item media">';
-        htmlBlock += '       <div class="media-left"><button class="feedback-delete btn btn-xs btn-danger"><span id="' + key + '" class="glyphicon glyphicon-remove"></span></button></div>';
+        htmlBlock += '       <div class="media-left"><button class="feedback-delete btn btn-xs btn-danger"><i class="far fa-trash-alt id="' + key + '""></i></button></div>';
         htmlBlock += '         <div class="feedback-info media-body">';
         htmlBlock += '           <div class="feedback-head">';
         htmlBlock += '             <div class="feedback-title">' + item.title + ' <small class="feedback-name label label-info">' + item.name + '</small></div>';
