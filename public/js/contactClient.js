@@ -43,12 +43,12 @@ const updateFeedback = (messagesArray) => {
 
         htmlBlock += '     <div class="feedback-item item-list media-list">';
         htmlBlock += '       <div class="feedback-item media">';
-        htmlBlock += '       <div class="media-left"><button class="feedback-delete btn btn-xs btn-danger"><i class="far fa-trash-alt id="' + key + '""></i></button></div>';
+        htmlBlock += '       <div class="media-left"><button class="feedback-delete btn btn-xs btn-dark"  id="' + key + '" ><i class="far fa-trash-alt"></i></button></div>';
         htmlBlock += '         <div class="feedback-info media-body">';
         htmlBlock += '           <div class="feedback-head">';
-        htmlBlock += '             <div class="feedback-title">' + item.title + ' <small class="feedback-name label label-info">' + item.name + '</small></div>';
+        htmlBlock += '             <div class="feedback-title">' + item.title + ' <small class="feedback-name label label-info">by: ' + item.name + '</small></div>';
         htmlBlock += '           </div>';
-        htmlBlock += '           <div class="feedback-message">' + item.message + '</div>';
+        htmlBlock += '           <div class="feedback-message">' + item.message + '</div>' ;
         htmlBlock += '         </div>'; 
         htmlBlock += '       </div>';
         htmlBlock += '     </div>';
@@ -66,7 +66,7 @@ displayMessages()
 let feedbackMessages = document.querySelector('.feedback-messages')
 
 feedbackMessages.addEventListener('click',async (e) => {
-
+console.log( e.target?.id);
     if(e.target?.id){
         let result = await fetch("/api", {
             method: "delete",
@@ -74,6 +74,7 @@ feedbackMessages.addEventListener('click',async (e) => {
             body: JSON.stringify({id: e.target.id})
         }) 
         const dataResult = await result.json()
+        console.log(dataResult);
         updateFeedback(dataResult)
 
         

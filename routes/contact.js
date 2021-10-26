@@ -37,12 +37,8 @@ res.json(feedbackData)
 
 router.delete('/api',(req,res) => {
 const {id} = req.body
-
-
     feedbackData = feedbackData.filter((feedback,index) => {
         return index != id
-
-    
     })
     fs.writeFile('data/feedback.json',JSON.stringify(feedbackData),'utf8', (err) => {
         if(err){
@@ -52,6 +48,6 @@ const {id} = req.body
     })
     res.json(feedbackData)
     
-})
+})      
 
 module.exports = router

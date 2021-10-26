@@ -8,6 +8,7 @@ body{
 }
 .font{
     font-family: 'Barlow', sans-serif;
+    color: lightgray;
 }
 .navLogoImg {
     width: 500px;
@@ -158,7 +159,7 @@ padding: 5px;
 text-align: center;
 box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.form input {
+.form input{
 font-family: 'Barlow', sans-serif;
 outline: 0;
 background: #2e2d2d;
@@ -269,7 +270,7 @@ font-size: 2rem;
 
 .feedback-form {
 margin-top: 20px;
-font-family: "Roboto", sans-serif;
+
 font-size: 1.5rem;
 }
 
@@ -283,7 +284,7 @@ font-size: 2em;
 }
 
 .feedback-name {
-font-size: .6em;
+font-size: .5em;
 font-weight: 100;
 }
 
@@ -302,4 +303,25 @@ padding: 8px 0;
 .feedback-item:last-of-type {
 border-bottom: none;
 }
+.black{
+    background-color: black;
+    color: lightgray;
+
+}
+.submit{
+    font-family: 'Barlow', sans-serif;
+    outline: 0;
+    background:black;
+    border: 1;
+    border-color: lightgray;
+    padding: 15px;
+    color: lightgray;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    }
+    .green{
+        color: rgb(30, 215, 96);
+    }
 
