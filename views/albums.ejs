@@ -20,20 +20,6 @@
             <a href="/" class="justify-content-center d-none d-lg-block">
                 <img src="/images/UTA+Logo+Smoke.png"  alt="UTA logo" class="navLogoImg">
             </a>
-            
-                <li class="nav-item dropdown  d-lg-none d-xl-none nav-links">
-                    <a class="nav-item-menu dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="images/UTA+Logo+Smoke.png" alt="UTA logo" class="navLogoImg">
-                    </a>
-                    <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
-                        <li class="nav-item dropdown-item"><a href="#" aria-current="Home">HOME</a></li>
-                        <li class="nav-item dropdown-item"><a href="/albums" id="searchHref">ALBUMS</a></li>
-                        <li class="nav-item dropdown-item"><a href="/about">ABOUT</a></li>
-                        <li class="nav-item dropdown-item"><a href="/contact">CONTACT US</a></li>
-                        <li class="nav-item dropdown-item"><a href="/chat">CHAT ROOM</a></li>
-                    </ul>
-                </li>
-            
         </div>
             <div class="d-flex d-none d-lg-block ">
             <ul class="nav-links">
@@ -44,13 +30,32 @@
                 <li class="nav-item"><a href="/chat">CHAT ROOM</a></li>
             </ul>
         </div>
-        
         </nav>
+        <nav>
+    
+            <div class="container-fluid d-lg-none d-xl-none">
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto nav-item-menu">
+                    <a class="p-2 " href="/" aria-current="Home">HOME</a>
+                    <a class="p-2 "href="/albums" id="searchHref">ALBUMS</a>
+                    <a class="p-2 "href="/about">ABOUT</a>
+                    <a class="p-2 "href="/contact">CONTACT US</a>
+                    <a class="p-2 "href="/chat">CHAT ROOM</a>
+                </div>
+                </div>
+            </div>
+    
+    </nav>
     </div>
     
         <div class="container-fluid p-0">
         <!-- Albums -->
-        <div class="col-sm-12">
+        <div class="col-sm-12 d-none d-lg-block">
             
                 <div class="container">
                     <div class="row justify-content-center">
@@ -79,7 +84,36 @@
                 </div><!-- container -->
             
         </div><!-- primary -->
-    
+        <!-- mobile -->
+        <div class="col-sm-12 d-lg-none d-xl-none ">
+            
+            <div class="container">
+                <div class="row justify-content-center">
+                    <% albums.forEach(albumObj => { %>
+                    <div class="col-lg-6 album-card">
+                            <a href="/albums/<%= albumObj.shortname %>">
+                                <img class="" src="/images/<%= albumObj.artwork%>" width="300px" height="300px" alt="Photo of <%= albumObj.albumname %>"></a>
+                            </div>
+                        
+                        <% if (showDetails == true) { %>
+                        <div class="col-lg-6 album-card nav-item flex-column">
+                            <h3><%= albumObj.albumname %></h3>
+                            <ul class="d-block">
+                                <% for( let index = 0; index < albumObj.tracklist.length; index++ ) { %>
+                                    <li class="nav-links"> <%= albumObj.tracklist[index] %> </li>
+                                    <% } %>
+                            </ul> 
+
+                            <a href="<%= albumObj.albumSM %>" class="font"> Listen on <i class="fab green fa-spotify"></i></a>
+                            
+                        </div>
+                        
+                        <% } %>
+                    <% }) %>
+                </div>
+            </div><!-- container -->
+        
+    </div>
     
 
     <footer class="container-fluid footspace  mb-3 pb-2 row m-0 gx-0 d-flex align-items-bottom justify-content-center">

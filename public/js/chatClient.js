@@ -9,9 +9,9 @@ const chatDisplay = document.querySelector('.chat-display')
 socket.on('updateMessage',(data) => {
     let newMessage =document.createElement('p');
     if (chatUserName.value === data.username){
-        newMessage.className = "bg-primary chat-text"
+        newMessage.className = " chat-text text-white"
     } else{
-        newMessage.className = "bg-dark chat_text"
+        newMessage.className = " chat_text text-white"
     }
     newMessage.innerHTML = `<strong>${data.username}</strong>: ${data.message}`
 
